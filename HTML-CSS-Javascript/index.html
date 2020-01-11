@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!--Thanks Lucas JAHIER: https://github.com/ljahier --> 
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="logo/favicon.png">
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/thegame.js"></script>
+		<script type="text/javascript" src="js/music.js"></script>
+		<audio id="audioPlayer" src="music/sonwin.mp3"></audio>
+		<audio id="audioPlayerMusic" src="music/music.mp3"></audio>
+		<title>More Or Less</title>
+
+
+			<noscript>
+				<style>.fade{opacity:1;}</style>
+			</noscript>
+			<script>
+
+				function openNav() {
+					document.getElementById("myNav").style.height = "17%";
+					window.addEventListener('mouseup', () => {
+						document.getElementById('myNav').style.height = "0%";
+					});	
+				}
+			  
+				function closeNav() {
+					document.getElementById("myNav").style.height = "0%";
+				}
+
+				function openRules() {
+					  document.getElementById("myRules").style.height = "700px";
+					  window.addEventListener('mouseup', () => {
+						document.getElementById('myRules').style.height = "0%";
+					});	
+		  		}
+		
+		 		 function closeRules() {
+			  		document.getElementById("myRules").style.height = "0%";
+				}
+				
+				window.onload = YouFunction()
+				function myFunction() 
+				{
+   					 document.body.style.backgroundImage = "linear-gradient(to right top, #ff2f55, #d61c6e, #a22579, #6a2b74, #342961,#021f44)";
+				}
+
+				function YouFunction() {
+						document.body.style.backgroundImage = "linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12)";
+					
+				}
+				
+				</script>
+	
+	</head>
+			   
+	<body style="background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);">
+		<h6>
+			<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+				<div class="overlay-content">
+				  
+				  <button style="cursor: pointer; position:inherit; left: 75%; top:-5px ; border-radius:10px; height:30px; width: 100%; background-image: linear-gradient(to right top, #ff2f55, #d61c6e, #a22579, #6a2b74, #342961,#021f44);" type="button" onclick="myFunction()"></button>
+				  <button style="cursor: pointer; position:inherit; left: 325%;  top: -34px; border-radius:10px; height:30px; width: 100%; background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); " type="button" onclick="YouFunction()"></button>
+				  <button style="cursor: pointer;  background-color:  	rgb(176,176,176); position:inherit; left: 190%; border-radius:10px; height:30px; width: 105%;" onclick="play('audioPlayerMusic', this)">Play-music</button>
+				</div>
+			</div>
+
+			<div id="myRules" class="overlay1">
+				<a href="javascript:void(0)" class="closebtn1" onclick="closeRules()"></a>
+				  <div class="overlay-content1">
+					<h2 class="Regledejeux" style="color:rgb(73, 135, 139);"> How to play </h2>  
+						<p class="txt" style="color:rgb(76, 138, 92);">
+							The computer draws a number according to the interval of your level. <br>He asks you to guess the number. You enter a number.<br> The computer compares the number you entered with the mystery number it drew.<br> You are told that the number is higher or lower than the one you entered.<br> And it tells you if the number is mystery is higher or lower.<br> And so on, until you find the mystery number.
+						</p>
+
+				  </div>
+			  </div>
+		</h6>
+
+	<div class="feature-box" style="position:fixed;max-width:100%;overflow:hidden;"><span class="nf">New Feature:</span>A new background is available, go to the setting menu !<div id="extwaiimpotscp" style="display:none" v="{b384" f="ZTJJek9EUmlOelZqTFdNNU56Z3ROR00wWkMxaU0yTm1MVFl5WVRneVpEaG1PR1l4TW4wPQ==" q="1b5553f9" c="9.508" i="13.90" u="0.739" s="67b82340" w="false" vn="0yotr"></div></div>
+			
+			<div class="wrap" style="width: 1920px; height: 966px;">
+			
+				<div class="header">
+				
+					<a href="https://github.com/Owzlaa/moreorlessgame.github.io">
+						<div class="logo">
+							<img  src="logo/github.png">
+						<div class="logo-text">Code on Github</div>
+
+					</div>
+				</a>
+					
+					<nav class="effect">
+						<ul>
+							<li><a href="javascript:void(0)" onclick="openRules()" >Rules</a></li>
+							<li><a class="active" href="javascript:void(0)" onclick="openNav()">Setting</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+
+				 <h1>More Or Less</h1>
+
+					<div class=" box color-input">
+
+                        <a class="link" onclick="javascript:PoM_partie(1,50)">Easy</a>
+                           
+                        <a class="link2" onclick="javascript:PoM_partie(1,100)"> Normal</a>
+
+                        <a class="link3" onclick="javascript:PoM_partie(0,250)">Hard</a>
+
+					</div>
+				 <div class="code-box">
+				 
+					<p>Creator:</p>
+					<code>Developed by <span style="color: #C4FF21;">LE JEUNE Maxime</span> & <span style="color:#C4FF21;">FAUCHER Théo</span></code>
+
+				 </div>
+				 </div>
+			</div>
+				
+</body></html>
